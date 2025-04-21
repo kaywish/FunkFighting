@@ -1616,8 +1616,8 @@ input::-moz-focus-inner {
 
 .btn--base {
   position: relative;
-  background: #e80000;
-  border: 2px solid #e80000;
+  background: #0d8541;
+  border: 2px solid #0d8541;
   color: white;
   padding: 12px 30px;
   border-radius: 999px;
@@ -1635,11 +1635,11 @@ input::-moz-focus-inner {
 }
 .btn--base.active:hover {
   color: white;
-  background: #e80000;
-  border: 2px solid #e80000;
+  background: #0d8541;
+  border: 2px solid #0d8541;
 }
 .btn--base:focus, .btn--base:hover {
-  color: #e80000;
+  color: #0d8541;
   background-color: transparent;
 }
 @media only screen and (max-width: 991px) {
@@ -2728,7 +2728,7 @@ section {
   left: 0;
   width: 100%;
   z-index: 999;
-  background-color: transparent;
+  background-color: rgb(255, 255, 255)
 }
 
 .header {
@@ -2773,7 +2773,7 @@ section {
   color: black;
 }
 .header-section.header-fixed .header-action a {
-  background-color: #e80000;
+  background-color: #000000;
   color: white;
 }
 
@@ -2890,7 +2890,7 @@ section {
   right: -22px;
   width: 2px;
   height: 12px;
-  background-color: #e80000;
+  background-color: #ffc324;
 }
 @media only screen and (max-width: 1199px) {
   .header-bottom-area .navbar-collapse .main-menu li a::after {
@@ -2909,14 +2909,14 @@ section {
   left: 0;
   width: 0;
   height: 1px;
-  background-color: #e80000;
+  background-color: #ffc324;
   transition: all 0.5s;
 }
 .header-bottom-area .navbar-collapse .main-menu li a.site-logo::before {
   display: none !important;
 }
 .header-bottom-area .navbar-collapse .main-menu li a:hover {
-  color: #e80000;
+  color: #ffc324;
 }
 .header-bottom-area .navbar-collapse .main-menu li a:hover::before {
   width: 100%;
@@ -2980,7 +2980,7 @@ section {
   border-bottom: 0px solid;
 }
 .header-bottom-area .navbar-collapse .main-menu li .sub-menu li:hover {
-  background-color: #e80000;
+  background-color: #ffc324;
 }
 @media only screen and (max-width: 1199px) {
   .header-bottom-area .navbar-collapse .main-menu li .sub-menu li:hover {
@@ -3168,23 +3168,23 @@ section {
 }
 .header-action a:hover {
   background-color: transparent;
-  color: white;
+  color: #ffc324;
 }
 
 .header-links li {
-  color: white;
+  color: #0d8541;
 }
 .header-links li .title {
   font-style: italic;
   font-weight: 600;
   font-family: "Kanit", sans-serif;
-  color: white;
+  color: #000000;
   margin-bottom: 2px;
 }
 .header-links li .sub-title {
   font-weight: 400;
   font-family: "Kanit", sans-serif;
-  color: white;
+  color: #000000;
   font-size: 18px;
 }
 .header-links li + li {
@@ -3230,13 +3230,13 @@ section {
 .toggle-bar .element {
   width: 5px;
   height: 5px;
-  background-color: #e80000;
+  background-color: #FFC324;
   margin: 1px;
   border-radius: 3px;
 }
 @media only screen and (max-width: 1199px) {
   .toggle-bar .element {
-    background-color: #e80000 !important;
+    background-color: #FFC324 !important;
   }
 }
 
@@ -3406,7 +3406,7 @@ section {
 }
 .header-section-three .header-action a:hover {
   background-color: transparent;
-  color: #e80000;
+  color: #ffc324;;
 }
 
 /*--------------------------------------------------------------
@@ -3418,9 +3418,9 @@ section {
   padding-bottom: 190px;
   padding-left: 200px;
   padding-right: 200px;
-  background-color: white;
   overflow: hidden;
   z-index: 9;
+  background-color: rgb(0, 0, 0);
 }
 @media only screen and (max-width: 1830px) {
   .banner-section {
@@ -3500,7 +3500,7 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #e80000;
+  background-color: #ffc324;
   z-index: -1;
   animation: fadeInDown 2s cubic-bezier(0.4, 0, 1, 1);
 }
@@ -3618,7 +3618,7 @@ section {
 .banner-section .banner-content .sub-title {
   font-weight: 700;
   font-size: 20px;
-  color: #e80000;
+  color: #0D8541;
   font-family: "Kanit", sans-serif;
   font-style: italic;
   margin-bottom: 5px;
@@ -3705,7 +3705,7 @@ section {
   left: -20px;
   width: 100%;
   height: 100%;
-  border: 1px dashed rgba(232, 0, 0, 0.5);
+  border: 1px dashed #0D8541;
   border-radius: 999px;
   z-index: -1;
 }
@@ -3722,7 +3722,7 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: black;
+  background-color:  #ffc324;
   border-radius: 999px;
   z-index: 2;
 }
