@@ -1053,9 +1053,9 @@ blockquote .quote-icon {
   line-height: 50px;
   font-size: 22px;
   background-color: transparent;
-  border: 1px solid #e80000;
+  border: 1px solid #ffc324;
   border-radius: 50%;
-  color: #e80000;
+  color: #ffc324;
   display: inline-block;
   text-align: center;
   position: relative;
@@ -1063,9 +1063,9 @@ blockquote .quote-icon {
   transition: all 0.3s;
 }
 .slider-next:hover, .slider-prev:hover {
-  background-color: rgba(232, 0, 0, 0.2);
+  background-color: rgba(180, 150, 12, 0.2);
   border: 1px solid transparent;
-  color: #e80000;
+  color: #ffc324;
 }
 
 .slider-next {
@@ -1451,7 +1451,7 @@ h4 a:hover {
   }
 }
 .section-header .section-title span {
-  color: #e80000;
+  color: #0D8541;
 }
 .section-header p {
   margin-top: 10px;
@@ -5196,7 +5196,7 @@ div[class*="col"]:nth-of-type(4n + 4) .trainer-item:hover {
   border: 1px solid white;
 }
 .client-section-two .slider-next:hover, .client-section-two .slider-prev:hover {
-  background-color: #e80000;
+  background-color: #a54343;
   border: 1px solid #e80000;
   color: white;
 }
@@ -5611,10 +5611,13 @@ div[class*="col"]:nth-of-type(4n + 4) .trainer-item:hover {
     [ ### training block ]
 */
 .training-section {
+  /* background-color: #111213; */
+  background-color: #000000;
   position: relative;
 }
 .training-section .training-element-one {
   position: absolute;
+  top: 31%;
   left: -6%;
   bottom: 5%;
 }
@@ -5625,11 +5628,24 @@ div[class*="col"]:nth-of-type(4n + 4) .trainer-item:hover {
 }
 .training-section .training-element-two {
   position: absolute;
+  top: 31%;
   right: -10%;
   bottom: 5%;
 }
 @media only screen and (max-width: 1199px) {
   .training-section .training-element-two {
+    display: none;
+  }
+}
+
+.training-section .training-element-three {
+  position: absolute;
+  top: 31%;
+  right: -10%;
+  bottom: 5%;
+}
+@media only screen and (max-width: 1199px) {
+  .training-section .training-element-three {
     display: none;
   }
 }
@@ -5644,7 +5660,7 @@ div[class*="col"]:nth-of-type(4n + 4) .trainer-item:hover {
 }
 
 .training-item {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   box-shadow: 0px 0px 10px #E8000026;
   border-radius: 10px;
   padding: 60px 40px;
