@@ -5063,12 +5063,37 @@ div[class*="col"]:nth-of-type(4n + 4) .trainer-item:hover {
 .client-section {
   position: relative;
   background-color: black;
-  background-image: url('assets/images/kicking.jpg');
+  background-image: url('assets/images/collab.jpg');
   background-size: cover;
   background-position: center;
   z-index: 1;
   overflow: hidden;
 }
+
+.readmore {
+  width:200px;
+}
+.readmore .moreText {
+  display:none;
+}
+.readmore a.more {
+  cursor: pointer;
+  display:block;
+}
+
+/* .client-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 2;
+}
+
+.client-section > * {
+  position: relative;
+  z-index: 3;
+} */
 
 
 
@@ -5172,6 +5197,7 @@ div[class*="col"]:nth-of-type(4n + 4) .trainer-item:hover {
 
 .client-right-thumb {
   position: relative;
+  color: #000;
 }
 .client-right-thumb img {
   width: 100%;
@@ -5233,7 +5259,7 @@ div[class*="col"]:nth-of-type(4n + 4) .trainer-item:hover {
 }
 .client-section-two .slider-next, .client-section-two .slider-prev {
   background-color: white;
-  border: 1px solid white;
+  border: 1px solid rgb(255, 255, 255);
 }
 .client-section-two .slider-next:hover, .client-section-two .slider-prev:hover {
   background-color: #a54343;
