@@ -979,12 +979,12 @@ blockquote .quote-icon {
 .custom-table tbody tr td:hover span, .custom-table tbody tr td.active span {
   color: white;
 }
-.custom-table tbody tr td:first-child {
+/* .custom-table tbody tr td:first-child {
   text-align: left;
-}
-.custom-table tbody tr td:first-child::after {
+} */
+/* .custom-table tbody tr td:first-child::after {
   display: none;
-}
+} */
 .custom-table tbody tr td span {
   color: #818181;
   display: block;
