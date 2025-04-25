@@ -164,6 +164,8 @@ input, textarea {
   width: 100%;
 }
 
+
+
 span {
   display: inline-block;
 }
@@ -2669,7 +2671,7 @@ option {
   background: white;
 }
 
-.loader {
+/* .loader {
   width: 200px;
   height: 200px;
   position: absolute;
@@ -2677,6 +2679,26 @@ option {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1000;
+} */
+
+.loader {
+  width: 150px;
+  height: 150px;
+  position: absolute; /* Optional if you need to center it */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* To center the loader */
+  z-index: 1000;
+}
+
+.loader img {
+
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
 .row > * {
@@ -5037,6 +5059,20 @@ div[class*="col"]:nth-of-type(4n + 4) .trainer-item:hover {
 /*-------------------------------------------------
     [ ### client block ]
 */
+
+.client-section {
+  position: relative;
+  background-color: black;
+  background-image: url('assets/images/kicking.jpg');
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+  overflow: hidden;
+}
+
+
+
+
 .client-section .section-header {
   width: 55%;
 }
