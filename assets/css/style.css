@@ -5125,9 +5125,9 @@ div[class*="col"]:nth-of-type(4n + 4) .trainer-item:hover {
 }
 
 .client-item {
-  padding: 0 30px 30px 30px;
+  padding: 0 20px 20px 20px;
   position: relative;
-  border-radius: 10px;
+  border-radius: 20px;
   z-index: 2;
 }
 @media only screen and (max-width: 1199px) {
@@ -5275,6 +5275,7 @@ div[class*="col"]:nth-of-type(4n + 4) .trainer-item:hover {
   border: 1px solid #565656;
 }
 .client-section-two .client-content p {
+ 
   color: white;
 }
 .client-section-two .client-footer-left .title {
