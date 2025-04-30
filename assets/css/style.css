@@ -1400,6 +1400,7 @@ h4 a:hover {
 }
 
 .section-header-wrapper {
+  
   display: flex;
   flex-wrap: wrap;
   align-items: flex-end;
@@ -3708,6 +3709,7 @@ section {
     width: 100%;
   }
 }
+
 @media only screen and (max-width: 630px) {
   .banner-widget-wrapper {
     width: 100%;
@@ -3761,6 +3763,11 @@ section {
   font-weight: 600;
 }
 
+/* @media only screen and (max-width: 430px) {
+  .banner-widget-wrapper .banner-widget-content p span {
+    font-weight: 100;
+  }
+} */
 .banner {
   position: relative;
 }
@@ -3894,6 +3901,7 @@ section {
 @media only screen and (max-width: 991px) {
   .banner-section-two .banner-btn {
     margin-top: 40px;
+    
   }
 }
 .banner-section-two .banner-btn a {
@@ -3901,10 +3909,12 @@ section {
 }
 
 .banner-slider {
+  
   overflow: hidden;
   display: flex;
 }
 .banner-slider .swiper-slide-active .banner-bg {
+  
   transform: scale3d(1, 1, 1);
 }
 .banner-slider .swiper-slide-active .banner-content .sub-title {
@@ -3920,14 +3930,17 @@ section {
 }
 @media only screen and (max-width: 575px) {
   .banner-slider .swiper-slide-active .banner-content .title {
+    
     animation: fadeIn 0.5s;
   }
 }
 .banner-slider .swiper-slide-active .banner-content .inner-title {
+  
   animation: fadeInUp 0.7s;
 }
 @media only screen and (max-width: 575px) {
   .banner-slider .swiper-slide-active .banner-content .inner-title {
+    
     animation: fadeIn 0.7s;
   }
 }
@@ -5112,17 +5125,25 @@ div[class*="col"]:nth-of-type(4n + 4) .trainer-item:hover {
   }
 }
 
-.client-slider {
+/* .client-slider {
   overflow: hidden;
-}
+} */
 
 .client-slider-two {
   overflow: hidden;
 }
 
-.client-slider-three {
-  overflow: hidden;
+
+/* width of testimonial cards */
+@media only screen and (max-width: 1180px) {
+  .client-slider-two{
+  max-width: fit-content;
+  }
 }
+
+/* .client-slider-three {
+  overflow: hidden;
+} */
 
 .client-item {
   padding: 0 20px 20px 20px;
@@ -5130,11 +5151,12 @@ div[class*="col"]:nth-of-type(4n + 4) .trainer-item:hover {
   border-radius: 20px;
   z-index: 2;
 }
-@media only screen and (max-width: 1199px) {
+/* @media only screen and (max-width: 1199px) {
   .client-item {
     padding: 0 20px 20px 20px;
+    
   }
-}
+} */
 .client-item::before {
   position: absolute;
   content: '';
