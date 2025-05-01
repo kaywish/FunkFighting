@@ -9382,3 +9382,29 @@ div[class*="col"]:nth-of-type(4n + 4) .choose-item::after {
 .blog-widget-thumb .blog-widget-video .waves {
   background: white;
 }
+
+
+/* OFFER AREA */
+
+.special-offer-banner {
+  background-color: #ffc324;
+  border-radius: 1.5rem;
+  padding: 0.5rem 1rem; /* Reduced padding for smaller height */
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 30rem;
+  margin: 0 auto;
+  margin-top: 10px;
+ 
+}
+
+.special-offer-banner h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+}
+
+.offer-price {
+  color: #0D8541; /* Green for "ONLY $39.99!" */
+}
+
