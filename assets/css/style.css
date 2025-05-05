@@ -8212,6 +8212,7 @@ div[class*="col"]:nth-of-type(4n + 4) .choose-item::after {
     [ ### acoount-widget block ]
 */
 .account-widget-section {
+  
   position: relative;
 }
 .account-widget-section .account-widget-element {
