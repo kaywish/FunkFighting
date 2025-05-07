@@ -1241,7 +1241,7 @@ blockquote .quote-icon {
   font-weight: 600;
 }
 .custom--card .card-body .card-form-wrapper .form--control::placeholder {
-  color: #2e2e2e;
+  color: #ffffff;
 }
 .custom--card .card-body .card-form-wrapper label {
   font-weight: 700;
@@ -1922,7 +1922,7 @@ option {
 }
 
 .form--control {
-  background-color: rgba(46, 46, 46, 0.9);
+  /* background-color: rgba(46, 46, 46, 0.9); */
   border: 1px solid #676767;
   box-shadow: none;
   height: 60px;
@@ -8298,6 +8298,7 @@ div[class*="col"]:nth-of-type(4n + 4) .choose-item::after {
 .account-widget-section--style {
   background-color: black
 }
+
 .account-widget-section--style .account-widget-element {
   bottom: 0;
   left: 0;
