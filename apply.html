@@ -172,44 +172,51 @@
                             </div>
                         </div>
                     </div>
-                    <form class="account-widget-form" name="apply-now" netlify>
+                    <form class="account-widget-form" name="apply-now" method="POST" netlify netlify-honeypot="bot-field">
+                        <input type="hidden" name="form-name" value="apply-now">
+                        
+                        <!-- Honeypot field -->
+                        <p class="hidden">
+                          <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+                        </p>
+                      
                         <div class="row justify-content-center mb-20-none">
-                            <div class="col-xl-6 col-lg-6 form-group">
-                                <label>Enter Name</label>
-                                <input type="text" class="form--control" placeholder="Name">
+                          <div class="col-xl-6 col-lg-6 form-group">
+                            <label>Enter Name</label>
+                            <input type="text" name="name" class="form--control" placeholder="Name" required>
+                          </div>
+                          <div class="col-xl-6 col-lg-6 form-group">
+                            <label>Email Address</label>
+                            <input type="email" name="email" class="form--control" placeholder="example@email.com" required>
+                          </div>
+                          <div class="col-xl-6 col-lg-6 form-group">
+                            <label>Phone Number</label>
+                            <input type="text" name="phone" class="form--control" placeholder="(123) 456-7890" required>
+                          </div>
+                          <div class="col-xl-6 col-lg-6 form-group">
+                            <label>Select your Training</label>
+                            <div class="account-widget-select">
+                              <select name="training_type" class="form--control" required>
+                                <option value="Boxing">Boxing</option>
+                                <option value="Muay Thai + Kickboxing">Muay Thai + Kickboxing</option>
+                                <option value="Nogi Brazilian Jiu Jitsu">Nogi Brazilian Jiu Jitsu</option>
+                                <option value="Mma + Wrestling">MMA + Wrestling</option>
+                                <option value="Kids Self Defense">Kids Self Defense</option>
+                                <option value="Personal Training">Personal Training</option>
+                              </select>
                             </div>
-                            <div class="col-xl-6 col-lg-6 form-group">
-                                <label>Email Address</label>
-                                <input type="email" class="form--control" placeholder="example@email.com">
-                            </div>
-                            <div class="col-xl-6 col-lg-6 form-group">
-                                <label>Phone Number</label>
-                                <input type="text" class="form--control" placeholder="(123) 456-7890">
-                            </div>
-                            <div class="col-xl-6 col-lg-6 form-group">
-                                <label>Select your Training</label>
-                                <div class="account-widget-select">
-                                    <select class="form--control">
-                                        <option value="1">Boxing</option>
-                                        <option value="2">Muay Thai + Kickboxing</option>
-                                        <option value="3">Nogi Brazilian Jiu Jitsu</option>
-                                        <option value="4">Mma + Wrestling</option>
-                                        <!-- <option value="5">Nogi Brazilian Jiu Jitsu</option> -->
-                                        <option value="6">Kids Self Defense</option>
-                                        <option value="7">Personal Training</option>
-                                       
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-xl-12 form-group">
-                                <label>Write Message</label>
-                                <textarea class="form--control" placeholder="Start typing here"></textarea>
-                            </div>
-                            <div class="col-xl-12 form-group text-center">
-                                <button type="submit" class="btn--base mt-20">Submit <i class="fas fa-arrow-right ml-2"></i></button>
-                            </div>
+                          </div>
+                          <div class="col-xl-12 form-group">
+                            <label>Write Message</label>
+                            <textarea name="message" class="form--control" placeholder="Start typing here" required></textarea>
+                          </div>
+                          <div class="col-xl-12 form-group text-center">
+                            <button type="submit" class="btn--base mt-20">Submit <i class="fas fa-arrow-right ml-2"></i></button>
+                          </div>
                         </div>
-                    </form>
+                      </form>
+                      
+                      
                 </div>
             </div>
         </div>

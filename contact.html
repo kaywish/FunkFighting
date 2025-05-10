@@ -279,40 +279,46 @@
             </div>
             <div class="col-xl-6 col-lg-6 mb-60">
                 <div class="account-widget-form-area">
-                    <form class="account-widget-form" name="acc-widget-form" netlify>
+                    <form class="account-widget-form" name="acc-widget-form" method="POST" netlify netlify-honeypot="bot-field">
+                        <input type="hidden" name="form-name" value="acc-widget-form">
+                        
+                        <!-- Honeypot field -->
+                        <p class="hidden">
+                          <label>Don’t fill this out if you're human: <input name="bot-field"></label>
+                        </p>
+                      
                         <div class="row justify-content-center mb-25-none">
-                            <div class="col-xl-12 form-group">
-                                <input type="text" class="form--control"  placeholder="Your Name*">
+                          <div class="col-xl-12 form-group">
+                            <input type="text" name="name" class="form--control" placeholder="Your Name*" required>
+                          </div>
+                          <div class="col-xl-12 form-group">
+                            <input type="email" name="email" class="form--control" placeholder="Your Email*" required>
+                          </div>
+                          <div class="col-xl-12 form-group">
+                            <input type="text" name="phone" class="form--control" placeholder="Your Phone*" required>
+                          </div>
+                          <div class="col-xl-12 form-group">
+                            <div class="account-widget-select">
+                              <select name="heard_about_us" class="form--control" required>
+                                <option value="" disabled selected>How did you hear about us?</option>
+                                <option value="facebook">Facebook</option>
+                                <option value="yelp">Yelp</option>
+                                <option value="google">Google</option>
+                                <option value="instagram">Instagram</option>
+                                <option value="referral">Referral</option>
+                                <option value="search">Search</option>
+                              </select>
                             </div>
-                            <div class="col-xl-12 form-group">
-                                <input type="email" class="form--control" placeholder="Your Email*">
-                            </div>
-                            <div class="col-xl-12 form-group">
-                                <input type="text" class="form--control" placeholder="Your Phone*">
-                            </div>
-                            <div class="col-xl-12 form-group" >
-                                <div class="account-widget-select"  >
-                                  <select class="form--control"  >
-                                    <option value="" disabled selected>How did you hear about us?</option>
-                                    <option value="facebook">Facebook</option>
-                                    <option value="yelp">Yelp</option>
-                                    <option value="google">Google</option>
-                                    <option value="instagram">Instagram</option>
-                                    <option value="referral">Referral</option>
-                                    <option value="search">Search</option>
-                                  </select>
-                                </div>
-                              </div>
-                              
-                              
-                            <div class="col-xl-12 form-group">
-                                <textarea style="background-color: white;" class="form--control" placeholder="Your Message*"></textarea>
-                            </div>
-                            <div class="col-xl-12 form-group">
-                                <button type="submit" class="btn--base">Send Now <i class="fas fa-arrow-right ml-2"></i></button>
-                            </div>
+                          </div>
+                          <div class="col-xl-12 form-group">
+                            <textarea name="message" class="form--control" style="background-color: white;" placeholder="Your Message*" required></textarea>
+                          </div>
+                          <div class="col-xl-12 form-group">
+                            <button type="submit" class="btn--base">Send Now <i class="fas fa-arrow-right ml-2"></i></button>
+                          </div>
                         </div>
-                    </form>
+                      </form>
+                      
                 </div>
             </div>
         </div>
@@ -370,11 +376,21 @@
         <div class="row">
             <div class="col-xl-12">
                 <div class="footer-widget">
-                    <form class="subscribe-form" name="subscribe" netlify>
+                    <form class="subscribe-form" name="get-more-info" method="POST" netlify netlify-honeypot="bot-field">
+                        <input type="hidden" name="form-name" value="get-more-info">
+                        
+                        <!-- Honeypot Field -->
+                        <p class="hidden">
+                          <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+                        </p>
+                      
+                        <!-- Hidden Custom Field -->
+                        <input type="hidden" name="message" value="need more info">
+                      
                         <label class="subscribe-icon"><i class="las la-envelope"></i></label>
-                        <input type="text" class="form--control" placeholder="Enter Your Email Address">
+                        <input type="email" name="email" class="form--control" placeholder="Enter Your Email Address" required>
                         <button type="submit" class="btn--base">GET MORE INFO</button>
-                    </form>
+                      </form>
                     <ul class="footer-list">
                         <li><a href="index.html">HOME</a></li>
                         <!-- <li><a href="about.html">ABOUT US</a></li>

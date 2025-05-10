@@ -8211,6 +8211,12 @@ div[class*="col"]:nth-of-type(4n + 4) .choose-item::after {
 /*-------------------------------------------------
     [ ### acoount-widget block ]
 */
+
+/* Honey pot */
+
+.hidden {
+  display: none;
+}
 .account-widget-section {
   
   position: relative;
