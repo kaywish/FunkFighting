@@ -29,7 +29,7 @@
     <!-- line-awesome-icon css -->
     <link rel="stylesheet" href="assets/css/icomoon.css">
     <!-- line-awesome-icon css -->
-    <link rel="stylesheet" href="assets/css/line-awesome.min.css">
+    <!-- <link rel="stylesheet" href="assets/css/line-awesome.min.css"> -->
     <!-- animate.css -->
     <link rel="stylesheet" href="assets/css/animate.css">
     <!-- aos.css -->
@@ -204,20 +204,24 @@
             <img src="assets/images/element/element-13.png" alt="element">
         </div> -->
         <div class="banner-thumb" data-aos="fade-up" data-aos-duration="2500">
-            <img 
-  src="assets/images/trainedbyfunk.webp" 
-  srcset="assets/images/trainedbyfunk-400.webp 400w,
-          assets/images/trainedbyfunk-600.webp 600w,
-          assets/images/trainedbyfunk.webp 704w"
-          sizes="(max-width: 600px) 100vw, 
-          (max-width: 1200px) 50vw, 
-          704px"
-   alt="element"
-   loading="lazy"
-   width="704"
-   height="807"
- 
-/>
+     <picture>
+  <source srcset="assets/images/trainedbyfunk.webp" type="image/webp">
+  <img 
+    src="assets/images/trainedbyfunk.jpg" 
+    srcset="assets/images/trainedbyfunk-400.webp 400w,
+            assets/images/trainedbyfunk-600.webp 600w,
+            assets/images/trainedbyfunk-800.webp 800w,
+            assets/images/trainedbyfunk-1000.webp 1000w,
+            assets/images/trainedbyfunk.webp 1200w"
+    sizes="(max-width: 600px) 100vw, 
+           (max-width: 1200px) 50vw, 
+           704px"
+    alt="Trained by Funk logo showing martial arts training"
+    loading="lazy"
+    width="704"
+    height="807"
+  />
+</picture>
         </div>
     </div>
     <div class="container-fluid">
