@@ -9433,7 +9433,7 @@ div[class*="col"]:nth-of-type(4n + 4) .choose-item::after {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('/assets/images/FunkLogo.PNG');
+  background-image: url('/assets/images/FunkLogo.webp');
   background-size: cover;
   background-position: center;
   opacity: 0.2; /* Adjust this value as needed */

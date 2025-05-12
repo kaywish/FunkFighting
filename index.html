@@ -9,17 +9,19 @@
         <meta name="description" content="Funk Fighting Academy offers martial arts training for all skill levels, helping you build fitness, confidence, and discipline. Join us today!">
         <title>Funk Fighting Academy</title>
       
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-2YGBST5872"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-2YGBST5872');
-</script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- preload trained by funk -->
+    <link rel="preload" as="image" href="assets/images/trainedbyfunk.webp" imagesrcset="
+  assets/images/trainedbyfunk-400.webp 400w,
+  assets/images/trainedbyfunk-600.webp 600w,
+  assets/images/trainedbyfunk-800.webp 800w,
+  assets/images/trainedbyfunk-1000.webp 1000w,
+  assets/images/trainedbyfunk.webp 1200w
+" imagesizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 704px">
+
+    <link rel="preload" href="https://fonts.googleapis.com">
+    <link rel="preload" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <!-- fontawesome css link -->
     <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
@@ -28,7 +30,7 @@
     <!-- bootstrap css link -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!-- favicon -->
-    <link rel="shortcut icon" href="assets/images/funFavi.JPG" type="image/x-icon">
+    <link  rel="shortcut icon" href="assets/images/funFavi.JPG" type="image/x-icon">
     <!-- swipper css link -->
     <link rel="stylesheet" href="assets/css/swiper.min.css">
     <!-- lightcase css links -->
@@ -49,6 +51,15 @@
     <link rel="stylesheet" href="assets/css/flipclock.css">
     <!-- main style css link -->
     <link rel="stylesheet" href="assets/css/style.css">
+
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-2YGBST5872"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2YGBST5872');
+</script>
 </head>
 <body>
 
@@ -216,7 +227,7 @@
      <picture>
   <source srcset="assets/images/trainedbyfunk.webp" type="image/webp">
   <img 
-    src="assets/images/trainedbyfunk.jpg" 
+    src="assets/images/trainedbyfunk.webp" 
     srcset="assets/images/trainedbyfunk-400.webp 400w,
             assets/images/trainedbyfunk-600.webp 600w,
             assets/images/trainedbyfunk-800.webp 800w,
@@ -226,9 +237,9 @@
            (max-width: 1200px) 50vw, 
            704px"
     alt="Trained by Funk logo showing martial arts training"
-    loading="lazy"
     width="704"
     height="807"
+ 
   />
 </picture>
         </div>
@@ -1233,7 +1244,7 @@
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     Start Call-to-action
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<section class="call-to-action-section ptb-120 bg-overlay-black bg_img" data-background="assets/images/funklogo.png">
+<section class="call-to-action-section ptb-120 bg-overlay-black bg_img" data-background="assets/images/FunkLogo.webp">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-xl-7 col-lg-8 text-center">
