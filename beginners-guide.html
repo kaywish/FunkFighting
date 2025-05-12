@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Funk Fighting Academy</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2YGBST5872"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-2YGBST5872');
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -46,7 +54,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div class="preloader">
     <div class="loader">
-        <img src="assets/images/funkfightinglogo.png" alt="Loading" />
+        <img src="assets/images/funkfightinglogo.webp" alt="Loading" />
     </div>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -63,7 +71,7 @@
             <div class="container-fluid">
                 <div class="header-menu-content">
                     <nav class="navbar navbar-expand-xl p-0">
-                        <a class="site-logo site-title" href="index.html"><img src="assets/images/funkfightinglogo.png" alt="site-logo"></a>
+                        <a class="site-logo site-title" href="index.html"><img src="assets/images/funkfightinglogo.webp" alt="site-logo"></a>
                         <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="fas fa-bars"></span>
@@ -585,7 +593,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <footer class="footer-section pt-120">
     <div class="footer-bg">
-        <img src="assets/images/bg/bg-4.png" alt="bg">
+        <img src="assets/images/bg/bg-4.webp" alt="bg">
     </div>
     <!-- <div class="footer-element">
         <img src="assets/images/element/element-6.png" alt="element">
@@ -595,7 +603,7 @@
             <div class="col-xl-12">
                 <div class="footer-top">
                     <div class="footer-logo">
-                        <a href="index.html" class="site-logo"><img src="assets/images/funkfightinglogo.png" alt="logo"></a>
+                        <a href="index.html" class="site-logo"><img src="assets/images/funkfightinglogo.webp" alt="logo"></a>
                     </div>
                     <ul class="footer-social">
                         <li><a href="https://www.facebook.com/p/FunkFightingacademy-61552243096461/"><i class="fab fa-facebook-f"></i></a></li>
@@ -608,11 +616,21 @@
         <div class="row">
             <div class="col-xl-12">
                 <div class="footer-widget">
-                    <form class="subscribe-form">
+                    <form class="subscribe-form" name="get-more-info" method="POST" netlify netlify-honeypot="bot-field">
+                        <input type="hidden" name="form-name" value="get-more-info">
+                        
+                        <!-- Honeypot Field -->
+                        <p class="hidden">
+                          <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+                        </p>
+                      
+                        <!-- Hidden Custom Field -->
+                        <input type="hidden" name="message" value="need more info">
+                      
                         <label class="subscribe-icon"><i class="las la-envelope"></i></label>
-                        <input type="text" class="form--control" placeholder="Enter Your Email Address">
+                        <input type="email" name="email" class="form--control" placeholder="Enter Your Email Address" required>
                         <button type="submit" class="btn--base">GET MORE INFO</button>
-                    </form>
+                      </form>
                     <ul class="footer-list">
                         <li><a href="index.html">HOME</a></li>
                         <!-- <li><a href="about.html">ABOUT US</a></li>

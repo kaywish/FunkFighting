@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Funk Fighting Academy</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2YGBST5872"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-2YGBST5872');
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -46,7 +54,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div class="preloader">
     <div class="loader">
-        <img src="assets/images/funkfightinglogo.png" alt="Loading" />
+        <img src="assets/images/funkfightinglogo.webp" alt="Loading" />
     </div>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -63,7 +71,7 @@
             <div class="container-fluid">
                 <div class="header-menu-content">
                     <nav class="navbar navbar-expand-xl p-0">
-                        <a class="site-logo site-title" href="index.html"><img src="assets/images/funkfightinglogo.png" alt="site-logo"></a>
+                        <a class="site-logo site-title" href="index.html"><img src="assets/images/funkfightinglogo.webp" alt="site-logo"></a>
                         <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="fas fa-bars"></span>
@@ -172,44 +180,51 @@
                             </div>
                         </div>
                     </div>
-                    <form class="account-widget-form">
+                    <form class="account-widget-form" name="apply-now" method="POST" netlify netlify-honeypot="bot-field">
+                        <input type="hidden" name="form-name" value="apply-now">
+                        
+                        <!-- Honeypot field -->
+                        <p class="hidden">
+                          <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+                        </p>
+                      
                         <div class="row justify-content-center mb-20-none">
-                            <div class="col-xl-6 col-lg-6 form-group">
-                                <label>Enter Name</label>
-                                <input type="text" class="form--control" placeholder="Name">
+                          <div class="col-xl-6 col-lg-6 form-group">
+                            <label>Enter Name</label>
+                            <input type="text" name="name" class="form--control" placeholder="Name" required>
+                          </div>
+                          <div class="col-xl-6 col-lg-6 form-group">
+                            <label>Email Address</label>
+                            <input type="email" name="email" class="form--control" placeholder="example@email.com" required>
+                          </div>
+                          <div class="col-xl-6 col-lg-6 form-group">
+                            <label>Phone Number</label>
+                            <input type="text" name="phone" class="form--control" placeholder="(123) 456-7890" required>
+                          </div>
+                          <div class="col-xl-6 col-lg-6 form-group">
+                            <label>Select your Training</label>
+                            <div class="account-widget-select">
+                              <select name="training_type" class="form--control" required>
+                                <option value="Boxing">Boxing</option>
+                                <option value="Muay Thai + Kickboxing">Muay Thai + Kickboxing</option>
+                                <option value="Nogi Brazilian Jiu Jitsu">Nogi Brazilian Jiu Jitsu</option>
+                                <option value="Mma + Wrestling">MMA + Wrestling</option>
+                                <option value="Kids Self Defense">Kids Self Defense</option>
+                                <option value="Personal Training">Personal Training</option>
+                              </select>
                             </div>
-                            <div class="col-xl-6 col-lg-6 form-group">
-                                <label>Email Address</label>
-                                <input type="email" class="form--control" placeholder="example@email.com">
-                            </div>
-                            <div class="col-xl-6 col-lg-6 form-group">
-                                <label>Phone Number</label>
-                                <input type="text" class="form--control" placeholder="(123) 456-7890">
-                            </div>
-                            <div class="col-xl-6 col-lg-6 form-group">
-                                <label>Select your Training</label>
-                                <div class="account-widget-select">
-                                    <select class="form--control">
-                                        <option value="1">Boxing</option>
-                                        <option value="2">Muay Thai + Kickboxing</option>
-                                        <option value="3">Nogi Brazilian Jiu Jitsu</option>
-                                        <option value="4">Mma + Wrestling</option>
-                                        <!-- <option value="5">Nogi Brazilian Jiu Jitsu</option> -->
-                                        <option value="6">Kids Self Defense</option>
-                                        <option value="7">Personal Training</option>
-                                       
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-xl-12 form-group">
-                                <label>Write Message</label>
-                                <textarea class="form--control" placeholder="Start typing here"></textarea>
-                            </div>
-                            <div class="col-xl-12 form-group text-center">
-                                <button type="submit" class="btn--base mt-20">Submit <i class="fas fa-arrow-right ml-2"></i></button>
-                            </div>
+                          </div>
+                          <div class="col-xl-12 form-group">
+                            <label>Write Message</label>
+                            <textarea name="message" class="form--control" placeholder="Start typing here" required></textarea>
+                          </div>
+                          <div class="col-xl-12 form-group text-center">
+                            <button type="submit" class="btn--base mt-20">Submit <i class="fas fa-arrow-right ml-2"></i></button>
+                          </div>
                         </div>
-                    </form>
+                      </form>
+                      
+                      
                 </div>
             </div>
         </div>
@@ -303,7 +318,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <footer class="footer-section pt-120">
     <div class="footer-bg">
-        <img src="assets/images/bg/bg-4.png" alt="bg">
+        <img src="assets/images/bg/bg-4.webp" alt="bg">
     </div>
     <!-- <div class="footer-element">
         <img src="assets/images/element/element-6.png" alt="element">
@@ -313,7 +328,7 @@
             <div class="col-xl-12">
                 <div class="footer-top">
                     <div class="footer-logo">
-                        <a href="index.html" class="site-logo"><img src="assets/images/funkfightinglogo.png" alt="logo"></a>
+                        <a href="index.html" class="site-logo"><img src="assets/images/funkfightinglogo.webp" alt="logo"></a>
                     </div>
                     <ul class="footer-social">
                         <li><a href="https://www.facebook.com/p/FunkFightingacademy-61552243096461/"><i class="fab fa-facebook-f"></i></a></li>
@@ -326,7 +341,7 @@
         <div class="row">
             <div class="col-xl-12">
                 <div class="footer-widget">
-                    <form class="subscribe-form">
+                    <form class="subscribe-form" name="subscribe" netlify>
                         <label class="subscribe-icon"><i class="las la-envelope"></i></label>
                         <input type="text" class="form--control" placeholder="Enter Your Email Address">
                         <button type="submit" class="btn--base">GET MORE INFO</button>
