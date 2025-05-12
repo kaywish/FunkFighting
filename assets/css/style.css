@@ -5871,7 +5871,8 @@ div[class*="col"]:nth-of-type(4n + 4) .trainer-item:hover {
   height: 88px;
 }
 .training-section-two .training-icon img {
-  height: 100%;
+  max-width: 100%;
+  height: auto;
   object-fit: cover;
   object-position: top;
 }
