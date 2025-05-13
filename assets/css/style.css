@@ -9439,3 +9439,50 @@ div[class*="col"]:nth-of-type(4n + 4) .choose-item::after {
   opacity: 0.2; /* Adjust this value as needed */
   z-index: 0;
 }
+
+/* POP UP FORM */
+
+   .popup-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: rgba(0,0,0,0.5);
+      z-index: 999;
+    }
+
+    /* Popup form container */
+    .popup-form-wrapper {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: #fff;
+      padding: 30px;
+      max-width: 600px;
+      width: 100%;
+      z-index: 1000;
+      border-radius: 8px;
+      box-shadow: 0 2px 15px rgba(0,0,0,0.3);
+    }
+
+    /* .form--control {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    } */
+
+ 
+
+   
+
+    .hidden {
+      display: none;
+    }
+
+ 

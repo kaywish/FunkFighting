@@ -60,6 +60,8 @@
 
   gtag('config', 'G-2YGBST5872');
 </script>
+
+
 </head>
 <body>
 
@@ -281,6 +283,66 @@
         </div>
     </div>
 </section>
+
+ <div class="popup-overlay" ></div>
+
+  <!-- Popup Form -->
+  <div class="popup-form-wrapper" style="background-color: #000000; border: 2px solid  #ffc324; border-radius: 10px; ">
+     <div class="section-header">
+  <h2 class="section-title" style="color: rgb(255, 255, 255); text-align: center;">
+    Apply now to get a <span>FREE CLASS!</span>
+  </h2>
+</div>
+
+    <form class="account-widget-form" name="acc-widget-form" method="POST" netlify netlify-honeypot="bot-field" style="background-color: #000000; border-radius: 10px;">
+      <input type="hidden" name="form-name" value="acc-widget-form">
+      
+      <!-- Honeypot -->
+      <p class="hidden">
+        <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+      </p>
+    
+      <div class="row justify-content-center mb-25-none">
+        <div class="col-xl-12 form-group">
+          <input type="text" name="name" class="form--control" placeholder="Your Name*" required>
+        </div>
+        <div class="col-xl-12 form-group">
+          <input type="email" name="email" class="form--control" placeholder="Your Email*" required>
+        </div>
+        <div class="col-xl-12 form-group">
+          <input type="text" name="phone" class="form--control" placeholder="Your Phone*" required>
+        </div>
+         
+                            
+                    <div class="col-xl-12 form-group">
+          <input type="text" name="class" class="form--control" placeholder="Which class are you interested in trying?*" required>
+        </div>
+        <!-- <div class="col-xl-12 form-group">
+          <textarea name="message" class="form--control" style="background-color: white;" placeholder="Which class are you interested in taking?*" required></textarea>
+        </div> -->
+        <div class="col-xl-12 form-group">
+          <button type="submit" class="btn--base">Send Now <i class="fas fa-arrow-right ml-2"></i></button>
+          <button type="button" class="btn--base popup-close-btn">Close</button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    // Show popup after 5 seconds
+    window.onload = function () {
+      setTimeout(function () {
+        document.querySelector(".popup-form-wrapper").style.display = "block";
+        document.querySelector(".popup-overlay").style.display = "block";
+      }, 5000);
+    };
+
+    // Close popup when clicking the close button
+    document.querySelector(".popup-close-btn").addEventListener("click", function () {
+      document.querySelector(".popup-form-wrapper").style.display = "none";
+      document.querySelector(".popup-overlay").style.display = "none";
+    });
+  </script>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     End Banner
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
