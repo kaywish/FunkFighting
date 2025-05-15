@@ -492,48 +492,35 @@
             </div>
             <div class="col-xl-6 col-lg-6 mb-60">
                 <div class="account-widget-form-area" style="background-color: white;">
-                    <form class="free-trial-form" name="free-trial-form" method="POST" netlify netlify-honeypot="bot-field" ">
-                        <h3 class="section-title" style="font-style: italic;
-  font-weight: 700; text-align: center;">Start Your Training with a<br>
-                            <span style="color: #ffc324;">FREE </span>  Trial!</h3>
-                        <input type="hidden" name="form-name" value="free-trial">
-                        
-                        <!-- Honeypot field -->
-                        <p class="hidden">
-                          <label>Don’t fill this out if you're human: <input name="bot-field"></label>
-                        </p>
-                      
-                        <div class="row justify-content-center mb-25-none">
-                          <div class="col-xl-12 form-group">
-                            <input type="text" name="name" class="form--control" placeholder="Your Name*" required>
-                          </div>
-                          <div class="col-xl-12 form-group">
-                            <input type="email" name="email" class="form--control" placeholder="Your Email*" required>
-                          </div>
-                          <div class="col-xl-12 form-group">
-                            <input type="text" name="phone" class="form--control" placeholder="Your Phone*" required>
-                          </div>
-                          <!-- <div class="col-xl-12 form-group">
-                            <div class="account-widget-select">
-                              <select name="heard_about_us" class="form--control" required>
-                                <option value="" disabled selected>How did you hear about us?</option>
-                                <option value="facebook">Facebook</option>
-                                <option value="yelp">Yelp</option>
-                                <option value="google">Google</option>
-                                <option value="instagram">Instagram</option>
-                                <option value="referral">Referral</option>
-                                <option value="search">Search</option>
-                              </select>
-                            </div>
-                          </div> -->
-                          <!-- <div class="col-xl-12 form-group">
-                            <textarea name="message" class="form--control" style="background-color: white;" placeholder="Your Message*" required></textarea>
-                          </div> -->
-                          <div class="col-xl-12 form-group">
-                            <button type="submit" class="btn--base">Send Now <i class="fas fa-arrow-right ml-2"></i></button>
-                          </div>
-                        </div>
-                      </form>
+                   <form class="free-trial-form" name="free-trial-form" method="POST" netlify netlify-honeypot="bot-field">
+  <h3 class="section-title" style="font-style: italic; font-weight: 700; text-align: center;">
+    Start Your Training with a<br>
+    <span style="color: #ffc324;">FREE </span> Trial!
+  </h3>
+
+  <input type="hidden" name="form-name" value="free-trial-form">
+  
+  <!-- Honeypot field -->
+  <p class="hidden">
+    <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+  </p>
+
+  <div class="row justify-content-center mb-25-none">
+    <div class="col-xl-12 form-group">
+      <input type="text" name="name" class="form--control" placeholder="Your Name*" required>
+    </div>
+    <div class="col-xl-12 form-group">
+      <input type="email" name="email" class="form--control" placeholder="Your Email*" required>
+    </div>
+    <div class="col-xl-12 form-group">
+      <input type="text" name="phone" class="form--control" placeholder="Your Phone*" required>
+    </div>
+    <div class="col-xl-12 form-group">
+      <button type="submit" class="btn--base">Send Now <i class="fas fa-arrow-right ml-2"></i></button>
+    </div>
+  </div>
+</form>
+
                       
                 </div>
             </div>
