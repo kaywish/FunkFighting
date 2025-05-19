@@ -4999,10 +4999,13 @@ div[class*="col"]:nth-of-type(4n + 4) .trainer-item:hover {
 .filter-btn-group {
   width: 70%;
   margin: 0 auto;
+  text-align: center;
   margin-bottom: 70px;
-  background-color: rgba(232, 0, 0, 0.1);
+  background-color: rgb(0, 0, 0);
   border-radius: 999px;
 }
+
+
 @media only screen and (max-width: 1199px) {
   .filter-btn-group {
     width: 90%;
@@ -5021,6 +5024,7 @@ div[class*="col"]:nth-of-type(4n + 4) .trainer-item:hover {
 .filter-btn-group button, .filter-btn-group input[type="button"], .filter-btn-group input[type="reset"], .filter-btn-group input[type="submit"] {
   background-color: transparent;
   padding: 16px 40px;
+   color: white;
   border-radius: 999px;
   font-weight: 500;
   transition: all 0.5s;
@@ -5033,7 +5037,7 @@ div[class*="col"]:nth-of-type(4n + 4) .trainer-item:hover {
 @media only screen and (max-width: 767px) {
   .filter-btn-group button, .filter-btn-group input[type="button"], .filter-btn-group input[type="reset"], .filter-btn-group input[type="submit"] {
     display: block;
-    background-color: rgba(232, 0, 0, 0.1);
+    background-color: rgb(0, 0, 0);
     width: 100%;
     margin-bottom: 20px;
   }
