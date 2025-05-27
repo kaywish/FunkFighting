@@ -618,21 +618,24 @@
         <div class="row">
             <div class="col-xl-12">
                 <div class="footer-widget">
-                    <form class="subscribe-form" name="get-more-info" method="POST" netlify netlify-honeypot="bot-field">
-                        <input type="hidden" name="get-more-info" value="get-more-info">
-                        
-                        <!-- Honeypot Field -->
-                        <p class="hidden">
-                          <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
-                        </p>
-                      
-                        <!-- Hidden Custom Field -->
-                        <input type="hidden" name="message" value="need more info">
-                      
-                        <label class="subscribe-icon"><i class="las la-envelope"></i></label>
-                        <input type="email" name="email" class="form--control" placeholder="Enter Your Email Address" required>
-                        <button type="submit" class="btn--base">GET MORE INFO</button>
-                      </form>
+                  <form name="get-more-info" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="subscribe-form">
+  <!-- Required hidden input -->
+  <input type="hidden" name="form-name" value="get-more-info" />
+
+  <!-- Honeypot Field -->
+  <p class="hidden">
+    <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+  </p>
+
+  <!-- Optional hidden message field -->
+  <input type="hidden" name="message" value="need more info" />
+
+  <label class="subscribe-icon"><i class="las la-envelope"></i></label>
+  <input type="email" name="email" class="form--control" placeholder="Enter Your Email Address" required />
+
+  <button type="submit" class="btn--base">GET MORE INFO</button>
+</form>
+
                     <ul class="footer-list">
                         <li><a href="index.html">HOME</a></li>
                         <!-- <li><a href="about.html">ABOUT US</a></li>
