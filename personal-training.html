@@ -186,80 +186,99 @@
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     Start Gallery
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <section class="gallery-section ptb-120">
-    <div class="container-fluid p-0">
-        <div class="row justify-content-center">
-            <div class="col-xl-4 col-lg-8 col-md-6 col-sm-8 text-center">
-                </div> 
+  <div class="container-fluid p-0">
+    <div class="row justify-content-center">
+      <div class="col-xl-4 col-lg-8 col-md-6 col-sm-8 text-center">
+        <!-- Empty for now -->
+      </div> 
+    </div>
+  </div>
+
+  <div class="container py-5">
+
+    <div class="top-training-images">
+    
+
+  <img src="/assets/images/image1.jpg" alt="Training" />
+    <img src="/assets/images/image2.jpeg" alt="Training" />
+    <img src="/assets/images/image3.jpeg" alt="Training" />
+    </div>
+
+    <!-- Black border wrapper JUST around the card -->
+    <div class="card-border-wrapper">
+      <div class="personal-training-card" data-aos="zoom-in" data-aos-duration="1200">
+        <div class="personal-training-content">
+          <h3 class="personal-training-title">
+            <a href="training-details.html">
+              PERSONAL 1-ON-1 <span>TRAINING</span>
+            </a>
+          </h3>
+          <p>
+            This personalized MMA training program will equip you with the strength, skills, and mental fortitude necessary to excel in the sport. Each session is tailored to your individual goals — ensuring a dynamic and effective experience.
+            <br><br>
+            Sessions adapt to your skill level, schedule, and objectives for a truly customized path to progress.
+          </p>
+
+          <form name="personal-training-booking-form" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="personal-training-booking-form">
+            <input type="hidden" name="form-name" value="personal-training-booking-form" />
+            <p style="display: none;">
+              <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+            </p>
+
+            <label>
+              Full Name:
+              <input type="text" name="name" required />
+            </label>
+
+            <label>
+              Email Address:
+              <input type="email" name="email" required />
+            </label>
+
+            <label>
+              Phone Number:
+              <input type="text" name="phone" required />
+            </label>
+
+            <p style="font-weight: 600; margin-top: 20px;">Choose Session:</p>
+            <div class="session-options">
+              <label class="session-btn">
+                <input type="radio" name="which_class" value="1 Hour - $100" required />
+                <span>1 Hour - $100</span>
+              </label>
+              <label class="session-btn">
+                <input type="radio" name="which_class" value="30 Minutes - $50" required />
+                <span>1/2 Hour - $50</span>
+              </label>
             </div>
+
+            <label>
+              Preferred Date & Time:
+              <input type="datetime-local" name="datetime" required />
+            </label>
+
+            <button type="submit" class="personal-training-submit-btn">Book Training</button>
+          </form>
+
         </div>
-<div class="container py-5">
-  <!-- <div class="row justify-content-center">
-    <div class="col-xl-7 col-lg-8 text-center">
-      <div class="section-header">
-        <h2 class="section-title"><span>1 ON 1 </span> Training</h2>
-        <p class="text-white">Check out our action-packed schedule — Self-Defense for kids, plus MMA, NOGI BJJ, and Boxing classes for adults and beginners all week long!</p>
       </div>
     </div>
-  </div> -->
 
-  <div class="personal-training-card" data-aos="zoom-in" data-aos-duration="1200">
-  <div class="personal-training-content">
-    <div class="personal-training-icon-area">
-      <!-- <img src="/icons/glove.svg" alt="MMA Glove Icon" class="personal-training-icon" /> -->
-    </div>
-    <h3 class="personal-training-title">
-      <a href="training-details.html">
-        PERSONAL 1-ON-1 <span>TRAINING</span>
-      </a>
-    </h3>
-    <p>
-      This personalized MMA training program will equip you with the strength, skills, and mental fortitude necessary to excel in the sport. Each session is tailored to your individual goals — ensuring a dynamic and effective experience.
-      <br><br>
-      Sessions adapt to your skill level, schedule, and objectives for a truly customized path to progress.
-    </p>
+    <!-- <div class="top-training-images">
 
-    <form class="personal-training-booking-form" action="#" method="POST">
-      <label>
-        Full Name:
-        <input type="text" name="name" required />
-      </label>
+  <img src="/assets/images/image1.jpg" alt="Training" />
+    <img src="/assets/images/image2.jpeg" alt="Training" />
+    <img src="/assets/images/image3.jpeg" alt="Training" />
+    </div> -->
 
-      <label>
-        Email Address:
-        <input type="email" name="email" required />
-      </label>
-
-    
-  <p style="font-weight: 600; margin-top: 20px;">Choose Session:</p>
-<div class="session-options">
-  <label class="session-btn">
-    <input type="radio" name="which_class" value="1 Hour - $100" required />
-    <span>1 Hour - $100</span>
-  </label>
-
-  <label class="session-btn">
-    <input type="radio" name="which_class" value="30 Minutes - $50" required />
-    <span>1/2 Hour - $50</span>
-  </label>
-</div>
-     
-
-      <label>
-        Preferred Date & Time:
-        <input type="datetime-local" name="datetime" required />
-      </label>
-
-      <button type="submit" class="personal-training-submit-btn">Book Training</button>
-    </form>
   </div>
-</div>
-
-
-       
-     
-    </div>
 </section>
+
+
+
+
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     End Gallery
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->

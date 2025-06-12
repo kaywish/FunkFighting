@@ -9652,9 +9652,7 @@ div[class*="col"]:nth-of-type(4n + 4) .choose-item::after {
   .personal-training-submit-btn {
     font-size: 1rem;
   }
-
 }
-
 
 .session-options {
   display: flex;
@@ -9700,4 +9698,78 @@ div[class*="col"]:nth-of-type(4n + 4) .choose-item::after {
   background-color: #fec73e;
   box-shadow: 0 0 0 3px #0B6F35 inset;
 }
+
+/* === NEW STYLES for left/right images === */
+.training-section-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.top-training-images {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  padding: 20px 16px 0;
+}
+
+.top-training-images img {
+  width: 300px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.top-training-images img:hover {
+  transform: scale(1.05);
+}
+
+/* Wrapper now just centers the card */
+.training-section-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 16px;
+}
+
+@media (max-width: 768px) {
+  .top-training-images {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /* overflow-x: auto; */
+    justify-content: flex-start;
+    gap: 1rem;
+    padding: 16px;
+ 
+  }
+
+  .top-training-images img {
+    width: 140px;
+    flex-shrink: 0;
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .top-training-images img {
+    width: 120px;
+  }
+}
+
+.card-border-wrapper {
+  background-color: #000;
+  padding: 12px;
+  border-radius: 24px;
+  display: flex;
+  justify-content: center;
+  max-width: 740px;
+  margin: 40px auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+
 
