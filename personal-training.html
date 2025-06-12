@@ -107,8 +107,14 @@
                                             
                                             
                                         </li>
-                                        <li><a href="beginners-guide.html">BEGINNERS-GUIDE</a></li>
-                                        <li><a href="schedule.html">SCHEDULE</a></li>
+                                         <li class="menu_has_children">
+                                    <a href="#0">TRAINING</a>
+                                       <ul class="sub-menu">
+                                                <li><a href="beginners-guide.html">BEGINNERS-GUIDE</a></li>
+                                               <li><a href="schedule.html">SCHEDULE</a></li>
+                                               <li><a href="personal-training.html">PERSONAL TRAINING</a></li>
+                                            </ul> 
+                                </li>
                                         <li><a href="https://app.glofox.com/portal/#/branch/6537c4e0cc69ad41d90162d2/courses">MY ACCOUNT</a></li>
                                         <!-- <li class="menu_has_children">
                                             <a href="#0">NEWS</a>
@@ -201,12 +207,12 @@
     <div class="top-training-images">
     
 
-  <img src="/assets/images/image1.jpg" alt="Training" />
-    <img src="/assets/images/image2.jpeg" alt="Training" />
-    <img src="/assets/images/image3.jpeg" alt="Training" />
-     <img src="/assets/images/image7.jpeg" alt="Training" />
-    <img src="/assets/images/image6.jpeg" alt="Training" />
-    <img src="/assets/images/image9.jpeg" alt="Training" />
+  <img src="/assets/images/personal_training/1.jpg" alt="Training" />
+    <img src="/assets/images/personal_training/6.jpg" alt="Training" />
+    <img src="/assets/images/personal_training/3.jpg" alt="Training" />
+     <img src="/assets/images/personal_training/5.jpg" alt="Training" />
+    <img src="/assets/images/personal_training/4.jpg" alt="Training" />
+    <img src="/assets/images/personal_training/2.jpg" alt="Training" />
     </div>
 
     <!-- Black border wrapper JUST around the card -->
@@ -257,10 +263,15 @@
               </label>
             </div>
 
+             <label>
+              Availability:
+              <input type="text" name="availability" required placeholder="Date and Times"/>
+            </label>
+<!-- 
             <label>
               Preferred Date & Time:
               <input type="datetime-local" name="datetime" required />
-            </label>
+            </label> -->
 
             <button type="submit" class="personal-training-submit-btn">Book Training</button>
           </form>
