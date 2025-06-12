@@ -9710,23 +9710,44 @@ div[class*="col"]:nth-of-type(4n + 4) .choose-item::after {
 
 .top-training-images {
   display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  flex-wrap: wrap;
-  padding: 20px 16px 0;
+  gap: 1rem;
+  overflow-x: auto;
+  padding: 20px 0;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
 }
 
 .top-training-images img {
-  width: 300px;
+  width: 200px;
+  flex-shrink: 0;
   border-radius: 12px;
   object-fit: cover;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  scroll-snap-align: start;
   transition: transform 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .top-training-images img:hover {
   transform: scale(1.05);
 }
+
+/* Optional scrollbar hiding (WebKit only) */
+/* .top-training-images::-webkit-scrollbar {
+  display: none;
+} */
+
+@media (max-width: 768px) {
+  .top-training-images img {
+    width: 140px;
+  }
+}
+
+@media (max-width: 480px) {
+  .top-training-images img {
+    width: 120px;
+  }
+}
+
 
 /* Wrapper now just centers the card */
 .training-section-wrapper {
@@ -9736,29 +9757,7 @@ div[class*="col"]:nth-of-type(4n + 4) .choose-item::after {
   padding: 0 16px;
 }
 
-@media (max-width: 768px) {
-  .top-training-images {
-    flex-direction: row;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    justify-content: flex-start;
-    gap: 1rem;
-    padding: 16px;
- 
-  }
 
-  .top-training-images img {
-    width: 140px;
-    flex-shrink: 0;
-    border-radius: 10px;
-  }
-}
-
-@media (max-width: 480px) {
-  .top-training-images img {
-    width: 120px;
-  }
-}
 
 .card-border-wrapper {
   background-color: #000;
